@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                margin-top: 30px;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237)
+            }
+            .planet2 {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                margin-top: 30px;
+            }
+            .moon2 {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+            }
+        </style>
+    </head>
+    <body>
+
+    
+    <script>
+        var mercuryEl = document.createElement("div");
+        mercuryEl.className = "planet";
+        mercuryEl.style.backgroundColor = "lightblue";
+        document.body.appendChild(mercuryEl);
+
+        var mercurymoonEl = document.createElement("div");
+        mercurymoonEl.className = "moon";
+        document.body.appendChild(mercurymoonEl);
+
+        var venusEl = document.createElement("div");
+        venusEl.className = "planet2";
+        venusEl.style.backgroundColor = "red";
+        document.body.appendChild(venusEl);
+
+        var venusmoonEl = document.createElement("div");
+        venusmoonEl.className = "moon2";
+        document.body.appendChild(venusmoonEl);
+
+        var earthEl = document.createElement("div");
+        earthEl.className = "planet";
+        earthEl.style.backgroundColor = "green";
+        document.body.appendChild(earthEl);
+
+        var earthmoonEl = document.createElement("div");
+        earthmoonEl.className = "moon";
+        document.body.appendChild(earthmoonEl);
+
+    </script>
+    </body>
+</html>
